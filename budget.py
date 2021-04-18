@@ -11,6 +11,17 @@ class Budget(object):
 		self.amount -= transfer_amount
 		budget2.amount += transfer_amount
 		return "transfer succesful"
+	
+	def deposit(self, amount):
+		self.amount += amount
+	
+	def withdraw(self, amount):
+		self.amount -= amount
+	
+	def getBalance(self):
+		return self.amount
+	
+	
 
 
 clothes_budget = Budget('clothes', 500)
