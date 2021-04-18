@@ -27,6 +27,6 @@ class Budget(object):
 clothes_budget = Budget('clothes', 500)
 food_budget = Budget('food', 200)
 print(clothes_budget.amount)
-clothes_budget.transfer(food_budget, 300)
+clothes_budget.transfer(food_budget, 200)
 print(clothes_budget.amount)
 print(food_budget.amount)
